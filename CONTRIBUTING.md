@@ -4,8 +4,8 @@ Thank you for your interest in contributing to CV Maker! This document provides 
 
 ## Getting Started
 
-1. Fork the repository
-2. Clone your fork: `git clone https://github.com/your-username/CVMaker.git`
+1. Fork the repository at [https://github.com/Wangscorp/cv-maker-app](https://github.com/Wangscorp/cv-maker-app)
+2. Clone your fork: `git clone https://github.com/your-username/cv-maker-app.git`
 3. Create a new branch: `git checkout -b feature/your-feature-name`
 4. Make your changes
 5. Test your changes thoroughly
@@ -75,7 +75,7 @@ npm test
 
 ## Reporting Bugs
 
-- Use GitHub Issues
+- Use [GitHub Issues](https://github.com/Wangscorp/cv-maker-app/issues)
 - Include clear description of the bug
 - Provide steps to reproduce
 - Include system information (OS, browser, versions)
@@ -83,7 +83,7 @@ npm test
 
 ## Feature Requests
 
-- Open a GitHub Issue
+- Open a [GitHub Issue](https://github.com/Wangscorp/cv-maker-app/issues)
 - Clearly describe the feature
 - Explain why it would be useful
 - Provide examples if possible
@@ -97,4 +97,4 @@ npm test
 
 ## Questions?
 
-Feel free to open an issue for any questions about contributing!
+Feel free to open an [issue](https://github.com/Wangscorp/cv-maker-app/issues) for any questions about contributing!
