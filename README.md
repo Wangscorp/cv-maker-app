@@ -1,5 +1,10 @@
 # CV Maker
 
+[![GitHub repo](https://img.shields.io/badge/github-cv--maker--app-blue?logo=github)](https://github.com/Wangscorp/cv-maker-app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=flat&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
+
 A full-stack web application for creating professional CVs/resumes. Built with React (frontend) and Rust/Actix (backend).
 
 ## 🚀 Features
@@ -42,8 +47,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/CVMaker.git
-cd CVMaker
+git clone https://github.com/Wangscorp/cv-maker-app.git
+cd cv-maker-app
 ```
 
 ### 2. Database Setup
@@ -216,16 +221,17 @@ This project is open source and available under the MIT License.
 
 ## 👥 Authors
 
-- Your Name - Initial work
+- Wangscorp - Initial work
 
 ## 🐛 Known Issues
 
-- Authentication endpoints are not yet fully implemented in the backend
+- Authentication endpoints use placeholder implementation (TODO: implement proper auth with password hashing and JWT)
 - PDF generation needs additional styling options
+- Database schema needs proper user authentication table
 
 ## 📮 Support
 
-For support, email your-email@example.com or open an issue in the GitHub repository.
+For support, open an issue in the [GitHub repository](https://github.com/Wangscorp/cv-maker-app/issues).
 
 ## 🙏 Acknowledgments
 
