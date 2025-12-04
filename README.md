@@ -13,6 +13,7 @@ A full-stack web application for creating professional CVs/resumes. Built with R
 ## 🏗️ Tech Stack
 
 ### Frontend
+
 - **React 19** - Modern React with hooks
 - **Vite** - Fast build tool and dev server
 - **Material-UI (MUI)** - Component library for professional UI
@@ -20,6 +21,7 @@ A full-stack web application for creating professional CVs/resumes. Built with R
 - **Axios** - HTTP client for API calls
 
 ### Backend
+
 - **Rust** - Systems programming language
 - **Actix-web** - Fast and powerful web framework
 - **Diesel** - ORM and query builder for PostgreSQL
@@ -92,12 +94,14 @@ The frontend will start on `http://localhost:5173`
 ## 🚦 Running the Application
 
 1. **Start the backend:**
+
    ```bash
    cd backend
    cargo run
    ```
 
 2. **Start the frontend (in a new terminal):**
+
    ```bash
    cd frontend
    npm run dev
@@ -152,11 +156,13 @@ The frontend is configured to connect to the backend at `http://localhost:8080`.
 ## 🎨 Features Overview
 
 ### Authentication
+
 - User registration with email validation
 - Secure login system
 - Password reset functionality
 
 ### CV Creation
+
 - Personal information section
 - Education history
 - Work experience
@@ -166,17 +172,20 @@ The frontend is configured to connect to the backend at `http://localhost:8080`.
 ## 🛡️ API Endpoints
 
 ### Authentication
+
 - `POST /auth/signup` - Register new user
 - `POST /auth/login` - User login
 - `POST /auth/forgot-password` - Request password reset
 
 ### CV Management
+
 - `POST /create-cv` - Generate new CV
 - `GET /cv/:id` - Retrieve CV details
 
 ## 🚀 Building for Production
 
 ### Backend
+
 ```bash
 cd backend
 cargo build --release
@@ -184,6 +193,7 @@ cargo build --release
 ```
 
 ### Frontend
+
 ```bash
 cd frontend
 npm run build
