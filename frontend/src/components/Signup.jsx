@@ -45,6 +45,7 @@ function Signup({ onLogin }) {
       return;
     }
     try {
+      // eslint-disable-next-line no-unused-vars
       const { confirmPassword, ...dataToSend } = formData;
       const response = await axios.post(
         "http://localhost:8080/auth/signup",

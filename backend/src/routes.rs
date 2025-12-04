@@ -73,3 +73,69 @@ pub async fn create_cv(cv_data: web::Json<CreateCVRequest>) -> Result<HttpRespon
 pub async fn health() -> Result<HttpResponse, Error> {
     Ok(HttpResponse::Ok().json("OK"))
 }
+
+// Authentication structures
+#[derive(Deserialize)]
+pub struct LoginRequest {
+    pub email: String,
+    pub password: String,
+}
+
+#[derive(Deserialize)]
+pub struct SignupRequest {
+    pub name: String,
+    pub email: String,
+    pub password: String,
+}
+
+#[derive(Deserialize)]
+pub struct ForgotPasswordRequest {
+    pub email: String,
+}
+
+#[derive(Serialize)]
+pub struct AuthResponse {
+    pub token: String,
+    pub user: UserInfo,
+}
+
+#[derive(Serialize)]
+pub struct UserInfo {
+    pub id: i32,
+    pub name: String,
+    pub email: String,
+}
+
+// Placeholder authentication handlers (TODO: Implement proper auth)
+pub async fn login(login_data: web::Json<LoginRequest>) -> Result<HttpResponse, Error> {
+    // TODO: Implement actual authentication logic
+    // For now, return a mock response
+    let response = AuthResponse {
+        token: format!("mock_token_{}", login_data.email),
+        user: UserInfo {
+            id: 1,
+            name: "Mock User".to_string(),
+            email: login_data.email.clone(),
+        },
+    };
+    Ok(HttpResponse::Ok().json(response))
+}
+
+pub async fn signup(signup_data: web::Json<SignupRequest>) -> Result<HttpResponse, Error> {
+    // TODO: Implement actual user registration
+    // For now, return a mock response
+    let response = AuthResponse {
+        token: format!("mock_token_{}", signup_data.email),
+        user: UserInfo {
+            id: 1,
+            name: signup_data.name.clone(),
+            email: signup_data.email.clone(),
+        },
+    };
+    Ok(HttpResponse::Ok().json(response))
+}
+
+pub async fn forgot_password(forgot_data: web::Json<ForgotPasswordRequest>) -> Result<HttpResponse, Error> {
+    // TODO: Implement password reset logic
+    Ok(HttpResponse::Ok().json(format!("Password reset link sent to {}", forgot_data.email)))
+}
